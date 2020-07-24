@@ -36,7 +36,7 @@ const IndexPage = ({data }) => (
     <ul style={{
       listStyle: 'none', 
       display:'flex',
-      flexWrap: 'wrap-reverse',
+      flexWrap: 'wrap',
       justifyContent: 'flex-start',
       alignItems:'space-between', 
       padding: '0',  }}>
@@ -51,7 +51,7 @@ const IndexPage = ({data }) => (
             </h2>
             <Image fluid = {project.image.asset.fluid} alt= {project.title}/>
             <p style={{ marginTop:'1rem'}}> {project.description}</p>
-            <Link to ={project.slug.current}>See project details </Link>
+            <Link to ={project.slug.current}>See photo details </Link>
         </li>
       ))}
 
