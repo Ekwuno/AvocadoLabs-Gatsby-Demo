@@ -36,9 +36,7 @@ const IndexPage = ({data }) => (
     <ul style={{
       listStyle: 'none', 
       display:'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'flex-start',
-      alignItems:'space-between', 
+      flexWrap: 'wrap-reverse',
       padding: '0',  }}>
 
       {data.allSanityProject.edges.map(({node:project})=>(
